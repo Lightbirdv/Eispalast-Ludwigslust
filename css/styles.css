@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*einfügen der Schriften*/
+@font-face { font-family: Lobster; src: url('../font/lobster-regular-webfont.woff') format("woff"); }
+@font-face { font-family: Poppins; src: url('../font/poppins-regular-webfont.woff') format("woff"); }
+@font-face { font-family: Poppins; src: url('../font/poppins-medium-webfont.woff') format("woff"); font-weight: 500; }
+@font-face { font-family: Poppins; src: url('../font/poppins-bold-webfont.woff') format("woff"); font-weight: 600; }
+
+
+h1 {
+    padding-top: 265px;
+    font-family: Lobster;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 70px;
+    color: #6EAABE;
+}
+
+h2 {
+    text-align: center;
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 56px;
+    color: #6EAABE;
+}
+
+h3 {
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 31px;
+    color: #6EAABE;
+}
+
+h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    color: #6EAABE;
+}
+
+p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #272626;
+}
+
+/*grid*/
+
+.grid{
+    margin: 0 auto;
+    width: 990px;
+}
+
+.clearfix {
+    clear:both;    
+}
+
+/* Navigation */
+
+.nav-container {
+    height: 110px;
+    background: linear-gradient(90deg, #FFFFFF 50%, #FF7D87 50%);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    width: 72.09px;
+    height: 72px;
+}
+
+nav .writing {
+    position: flex;
+    width: 188px;
+    height: 59.6px;
+    left: 430px;
+    top: 34px;
+} 
+
+.nav-items li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-items li a {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    font-family: Poppins;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    background-color: #6EAABE;
+    margin: -10px;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: #6EAABE;
+    border-radius: 40px;
+}
+  
+
+/* content der Mainpage*/
+
+/* first section stuff*/
+
+.first-section{
+    height: 720px;
+    background: linear-gradient(90deg, #FFFFFF 50%, #FF7D87 50%);
+}
+
+.first-section img#bigcone{
+    display: block;
+    height: 720px;
+    margin-left: 0 auto;
+    float: right;
+}
+
+.first-section p{
+    padding-top: 20px;
+}
+
+.first-section button{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 25px;
+    color:#FFFFFF;
+    background-color: #FF7D87;
+    border-left: 28px solid;
+    border-right: 28px solid;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-color: #FF7D87;
+    border-radius: 46px;
+}
+
+.first-section button:hover {
+    background-color: #f8a5ac;
+    border-color: #f8a5ac;
+}
+
+.first-section img#twitter-pink, img#insta-pink, img#facebook-pink{
+    padding-left: 19px;
+    padding-right: 10px;
+    margin-top: 120px;
+    height: 16px;  
+}
+
+/*second section stuff*/
+
+.second-section{
+    padding-top: 63px;
+    padding-left: 147px;
+    padding-right: 147px;
+}
+
+.second-section p {
+    text-align: center;
+    line-height: 22px;
+}
+
+/*carousel stuff*/
+.carousel {
+    padding-top: 3%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    max-width: 990px;
+}
+
+.carousel .items {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.10);
+    margin: 10px;
+    width: 320px;
+    height: 440px;
+    border-radius: 14px;
+}
+
+.carousel .items img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15%;
+    margin-bottom: -15%;
+    max-width: 100%;
+}
+
+.carousel .items h3 {
+    margin-left: 30px;
+}
+
+.carousel .items p {
+    padding-top: 4px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #272626;
+    margin-left: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+button.prev{
+    border: 2.5px solid;
+    padding: 14px 18px 14px 18px;
+    position: absolute;
+    left: 2%;
+    margin-top: 18%;
+    margin-left: 3%;
+    border-radius: 50%;
+    color: #6EAABE;
+    font-size: 18px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+button.next{
+    border: 2.5px solid;
+    padding: 14px 18px 14px 18px;
+    position: absolute;
+    right: 2%;
+    margin-top: 18%;
+    margin-right: 3%;
+    border-radius: 50%;
+    color: #6EAABE;
+    font-size: 18px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+/*third section*/
+
+.third-section {
+    padding-top: 550px;
+}
+
+.third-section p {
+    padding-top: 5px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.third-section h3 {
+    padding-top: 35px;
+}
+
+.third-section table {
+    width: 50%;
+    padding-top: 14px;
+}
+
+.third-section table#table1 {
+    float:left;
+}
+
+.third-section div#table2 {
+    margin-top: -65px;
+}
+
+.third-section table tr td b{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 161.7%;
+    color: #6EAABE;
+}
+
+.third-section table tr td{
+    padding-top: 3px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #272626;
+}
+
+/*move table 2 up because of different length between table 1 and table 2*/
+
+.third-section h3#nussig {
+    margin-top: 120px;
+}
+
+.third-section img {
+    margin-top: 100px;
+    margin-right: 50px;
+    float: right;
+}
+
+/*fourth section Bonuskarte*/
+
+.fourth-section {
+    padding-top: 100px;
+}
+
+.fourth-section p {
+    padding-top: 5px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.fourth-section h3 {
+    font-size: 45px;
+    line-height: 56px;
+    color: #6EAABE;
+    text-align: center;
+}
+
+.fourth-section a {
+    padding-top: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    display: block;
+    color: #6EAABE;
+}
+
+.fourth-section img#einewaffel {
+    margin-top: 80px;
+    float:left;
+}
+
+.fourth-section .lieferservice {
+    padding-top: 150px;
+    padding-right: 80px;
+    float:right;
+}
+
+.fourth-section .lieferservice h2 {
+    text-align: left;
+}
+
+.fourth-section .lieferservice p {
+    text-align: left;
+}
+
+.fourth-section .lieferservice button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 25px;
+    color:#FFFFFF;
+    background-color: #FF7D87;
+    border-left: 28px solid;
+    border-right: 28px solid;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-color: #FF7D87;
+    border-radius: 46px;
+}
+
+.fourth-section .lieferservice button:hover {
+    background-color: #f8a5ac;
+    border-color: #f8a5ac;
+}
+
+.fifth-section .oeffnungszeiten {
+    margin-left: -370px;
+    padding-top: 230px;
+    display: inline-block;
+    padding-bottom: 157px;
+}
+
+.fifth-section h2 {
+    text-align: left;
+    padding-bottom: 35px;
+}
+
+.fifth-section img#karte {
+    margin-top: -350px;
+    display:inline-block;
+    margin-left: 520px;
+}
+
+.fifth-section .oeffnungszeiten table tr td {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #272626;
+    padding: 15px;
+}
+
+.fifth-section .oeffnungszeiten table tr td b {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #272626;
+}
+
+.footer {
+    height: 354px;
+    background: #FF7D87;
+    background-image: url("../img/drip.svg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+
+.footer #logo {
+    height: 113.84px;
+    width: 148px;
+    float: left;
+    margin-left: 100px;
+}
+
+.footer img#twitter-white, img#insta-white, img#facebook-white{
+    padding-left: 19px;
+    padding-right: 30px;
+    margin-top: 30px;
+    height: 16px;  
+    float: left;
+}
+
+.socialimg {
+    padding-left: 75px;
+}
+
+.footer .footertxt {
+    width: 60%;
+    float: left;
+    padding-right: 10px ;
+    margin-top: 110px;
+    padding-left: 120px;
+}
+
+.element {
+    width: 30%;
+    padding-top: 110px;
+    float: left;
+    display: block;
+}
+
+.footer .footertxt b {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer .footertxt p {
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.footer .footertxt a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
